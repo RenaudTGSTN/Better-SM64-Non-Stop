@@ -766,6 +766,7 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
 }
 
 u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct Object *o) {
+    //TODO change this function so that when mario gets any star other than a key or a grand star it sets starGrabAction to NO EXIT
     u32 starIndex;
     u32 starGrabAction = ACT_STAR_DANCE_EXIT;
     u32 noExit = (o->oInteractionSubtype & INT_SUBTYPE_NO_EXIT) != 0;

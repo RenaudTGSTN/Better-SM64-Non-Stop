@@ -612,7 +612,7 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 break;
 
             case 80:
-                if (0) { //TODO replace with if getting boss key ?
+                if (m->actionArg & 1) == 0) { //TODO change condition here so that it is true only when getting boss key or grand star
                     level_trigger_warp(m, WARP_OP_STAR_EXIT);
                 } else {
                     enable_time_stop();
