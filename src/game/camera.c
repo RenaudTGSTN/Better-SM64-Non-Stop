@@ -5206,7 +5206,7 @@ u8 get_cutscene_from_mario_status(struct Camera *c) {
                 cutscene = CUTSCENE_STANDING_DEATH;
                 break;
             case ACT_STAR_DANCE_EXIT:
-                cutscene = determine_dance_cutscene(c);
+                cutscene = CUTSCENE_DANCE_DEFAULT;
                 break;
             case ACT_STAR_DANCE_WATER:
                 cutscene = determine_dance_cutscene(c);
