@@ -618,7 +618,7 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                     enable_time_stop();
                     create_dialog_box_with_response(gLastCompletedStarNum == 7 ? 
                     DIALOG_013 : 
-                    1 <= gLastCompletedCourseNum && gLastCompletedCourseNum <= 15   ? //TODO change later. set correct dialog when in normal course
+                    1 <= gLastCompletedCourseNum && gLastCompletedCourseNum <= 15   ? //TODO change later and add choice option. sets correct dialog when in normal course
                     DIALOG_170 : DIALOG_014);
                     m->actionState = 1;
                 }

@@ -768,7 +768,7 @@ u32 interact_water_ring(struct MarioState *m, UNUSED u32 interactType, struct Ob
 u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct Object *o) {
     u32 starIndex;
     u32 starGrabAction = ACT_STAR_DANCE_EXIT;
-    u32 noExit = 1; //TODO rewrite, bad fix
+    u32 noExit = 1; //TODO rewrite, bad fix esp. underwater
     u32 grandStar = (o->oInteractionSubtype & INT_SUBTYPE_GRAND_STAR) != 0;
 
     if (m->health >= 0x100) {
