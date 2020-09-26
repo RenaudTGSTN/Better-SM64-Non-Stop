@@ -612,11 +612,14 @@ void general_star_dance_handler(struct MarioState *m, s32 isInWater) {
                 break;
 
             case 80:
-                if (0) { //TODO replace with if getting boss key ?
+                if ((m->actionArg & 1) == 0) {
                     level_trigger_warp(m, WARP_OP_STAR_EXIT);
                 } else {
                     enable_time_stop();
-                    create_dialog_box_with_response(gLastCompletedStarNum == 7 ? DIALOG_013 : DIALOG_014);
+                    create_dialog_box_with_response(gLastCompletedStarNum == 7 ? 
+                    DIALOG_013 : 
+                    1 <= gLastCompletedCourseNum && gLastCompletedCourseNum <= 15   ? //TODO change later. set correct dialog when in normal course
+                    DIALOG_170 : DIALOG_014);
                     m->actionState = 1;
                 }
                 break;

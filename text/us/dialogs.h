@@ -2100,3 +2100,13 @@ Arrgghh!\n\
 Anyone entering this cave\n\
 without permission will\n\
 meet certain disaster."))
+
+DEFINE_DIALOG(DIALOG_170, 1, 4, 30, 200, _("\
+Wow! Another Power Star!\n\
+Mario gains more courage\n\
+from the power of the\n\
+castle.\n\
+Do you want to go back\n\
+to the castle?\n\
+\n\
+//Not Now//You Bet"))
