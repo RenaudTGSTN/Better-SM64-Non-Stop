@@ -769,7 +769,7 @@ u32 interact_star_or_key(struct MarioState *m, UNUSED u32 interactType, struct O
     //TODO this is probably the function where we'd want to make most of the changes
     u32 starIndex;
     u32 starGrabAction = ACT_STAR_DANCE_EXIT;
-    u32 noExit = 16 <= gCurrCourseNum&& gCurrCourseNum <= 18 ? (o->oInteractionSubtype & INT_SUBTYPE_NO_EXIT) != 0 : 1; //TODO find a cleaner way to do this
+    u32 noExit = 16 <= gCurrCourseNum && gCurrCourseNum <= 18 ? (o->oInteractionSubtype & INT_SUBTYPE_NO_EXIT) != 0 : 1; //TODO find a cleaner way to do this
     u32 grandStar = (o->oInteractionSubtype & INT_SUBTYPE_GRAND_STAR) != 0;
 
     if (m->health >= 0x100) {
